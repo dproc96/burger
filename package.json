@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "An app for tracking burgers eaten",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dproc96/burger.git"
+  },
+  "author": "Dan Proctor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dproc96/burger/issues"
+  },
+  "homepage": "https://github.com/dproc96/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.18.0"
+  }
+}
