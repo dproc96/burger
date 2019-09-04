@@ -1,0 +1,16 @@
+<div>
+    {{#each burgersUndevoured}}
+    <div>
+        <h3 contenteditable="true" data-id="{{id}}" class="burger-editor">{{burger_name}}</h3>
+        <button class="devour" data-id="{{id}}" data-name="{{burger_name}}">Devour It!</button>
+    </div>
+    {{/each}}
+</div>
+
+<div>
+    <ol>
+        {{#each burgersDevoured}}
+        <li>{{burger_name}}</li>
+        {{/each}}
+    </ol>
+</div>
