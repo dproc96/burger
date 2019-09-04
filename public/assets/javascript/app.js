@@ -16,9 +16,11 @@ const burgerMethods = {
             burger_name: $("#burger-name").val() 
         };
         $("#burger-name").empty();
-        $.post("/api/new", burgerObject, function(response) {
-            location.reload()
-        })
+        if (burgerObject.burger_name) {
+            $.post("/api/new", burgerObject, function(response) {
+                location.reload()
+            })
+        }
     },
     devourBurger: function(e) {
         let burgerObject = {
