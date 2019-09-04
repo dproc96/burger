@@ -10,6 +10,7 @@
     margin: 20px;
     border-radius: 15px;
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+    width: max-content;
 }
 
 .card-item {

@@ -1,5 +1,6 @@
 body {
     background-color: #A60A0A;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -20,6 +21,10 @@ img {
     margin: 5px auto;
     border-radius: 100%;
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
 }
 
 h1 {
@@ -54,6 +59,7 @@ button {
     border: none;
     margin: 0px auto;
     display: block;
+    font-family: 'Lobster', cursive;
 }
 
 ol {
