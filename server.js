@@ -1,4 +1,3 @@
-const Sequelize = require("sequelize");
 const express = require("express");
 const handlebars = require("express-handlebars");
 const db = require("./models");
@@ -16,6 +15,10 @@ app.set("view engine", "handlebars");
 
 require("./routes/html-routes")(app, PORT);
 require("./routes/api-routes")(app);
+
+app.get('*', function (request, response) {
+    response.redirect('/');
+});
 
 db.sequelize.sync().then(function() {
     app.listen(PORT, function() {
