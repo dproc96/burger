@@ -1,0 +1,63 @@
+body {
+    background-color: #A60A0A;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px 0px;
+    background-color: #D9D26C;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    width: 100%;
+}
+
+img {
+    width: 200px;
+    margin: 5px auto;
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #A60A0A;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+input {
+    width: Calc(100% - 20px);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #D9D26C;
+    padding: 5px;
+    border: none;
+    margin: 0px auto;
+    display: block;
+}
+
+ol {
+    list-style: decimal;
+    position: relative;
+    left: 10px;
+}

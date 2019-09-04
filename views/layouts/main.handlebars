@@ -15,16 +15,24 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Eat That Burger!</h1>
+    <header>
+        <h1>Eat That Burger!</h1>
 
-    <img src="/assets/images/burger.jpg" alt="burger">
+        <img src="/assets/images/burger.jpg" alt="burger">
 
-    <p>To eat a burger, click the "Devour It!" button, to add a burger enter the name in the input below</p>
+        <p>To eat a burger, click the "Devour It!" button, to add a burger enter the name in the input below</p>
+    </header>
 
-    {{{body}}}
+    <main>
+        <div class="flex">
+            {{{body}}}
+        </div>
 
-    <input type="text" name="name" id="burger-name">
-    <button id="add-burger">Add Burger</button>
+        <div class="card half-sized centered">
+            <input type="text" name="name" id="burger-name">
+            <button id="add-burger">Add Burger</button>
+        </div>
+    </main>
 
     <script src="/assets/javascript/app.js"></script>
 </body>

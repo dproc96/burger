@@ -1,0 +1,13 @@
+.half-sized {
+    width: 50%;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    filter: brightness(50%);
+}

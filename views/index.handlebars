@@ -1,13 +1,14 @@
-<div>
+<div class="card">
     {{#each burgersUndevoured}}
-    <div>
+    <div class="card-item">
         <h3 contenteditable="true" data-id="{{id}}" class="burger-editor">{{burger_name}}</h3>
         <button class="devour" data-id="{{id}}" data-name="{{burger_name}}">Devour It!</button>
     </div>
     {{/each}}
 </div>
 
-<div>
+<div class="card">
+    <h2>Burgers Eaten</h2>
     <ol>
         {{#each burgersDevoured}}
         <li>{{burger_name}}</li>
