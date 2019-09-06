@@ -1,11 +1,12 @@
-const axios = require("axios")
+const db = require("../models");
+const manager = require("../utils/manager");
 
 module.exports = function(app, PORT) {
     app.get("/", function(request, response) {
-        axios.get(`http://localhost:${PORT}/api`).then(function(results) {
+        manager.findAllPosts(db).then(function(results) {
             let data = {
-                burgersUndevoured: results.data.filter((x) => { return !x.devoured; }),
-                burgersDevoured: results.data.filter((x) => { return x.devoured; })
+                burgersUndevoured: results.filter((x) => { return !x.devoured; }),
+                burgersDevoured: results.filter((x) => { return x.devoured; })
             }
             response.render("index", data);
         }).catch(function(error) {

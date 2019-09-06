@@ -1,8 +1,9 @@
-const db = require("../models")
+const db = require("../models");
+const manager = require("../utils/manager")
 
 module.exports = function(app) {
     app.get("/api", function(request, response) {
-        db.burgers.findAll().then(function(results) {
+        manager.findAllPosts(db).then(function (results) {
             response.json(results);
         }).catch(function (error) {
             response.status(503).end()
