@@ -3,7 +3,7 @@ const manager = require("../utils/manager")
 
 module.exports = function(app) {
     app.get("/api", function(request, response) {
-        manager.findAllPosts(db).then(function (results) {
+        manager.findAll(db).then(function (results) {
             response.json(results);
         }).catch(function (error) {
             response.status(503).end()

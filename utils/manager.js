@@ -1,10 +1,10 @@
 module.exports = {
-    findAllPosts: function(db) {
+    findAll: function(db) {
         return new Promise(function(resolve, reject) {
             db.burgers.findAll().then(function (results) {
                 resolve(results);
             }).catch(function (error) {
-                reject(error)
+                reject(error);
             })
         })
     }
